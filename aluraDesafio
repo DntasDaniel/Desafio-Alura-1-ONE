@@ -1,4 +1,4 @@
-JS{ // nome = aluraDesafio
+
 var i = 0;
 var lista = [];
 function verificacrip(x){
@@ -183,9 +183,11 @@ function checkChar1(e){
 }
 
 btn2.onclick = verificadescrip, erase;
-}
 
-HTML{
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
