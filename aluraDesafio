@@ -208,7 +208,7 @@ btn2.onclick = verificadescrip, erase;
     <br>
     <p class="alerta">Digite apenas letras minúsculas e sem acento</p>
     <p class="alerta">Ao escrever já criptograva automaticamente!<p>
-        <button  id = "btn" class="btnreflesh" onclick="window.location.reload()" >REFLESH</button>
+        <button  id = "btn" class="btnreflesh" onclick="window.location.reload()" >REFRESH</button>
     <button  id = "btn2" class="bdescrip" >Descriptografar</button>
 
         <style>
