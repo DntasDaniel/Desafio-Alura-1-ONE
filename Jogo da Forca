@@ -1,0 +1,408 @@
+
+var listaDinamica= [];
+var palavraCategoria;
+var palavraSorteada;
+const palavras= [
+    palavra001={
+        nome:"IRLANDA",
+        categoria:"LUGARES"
+    },
+    palavra002={
+        nome:"BRASIL",
+        categoria:"LUGARES"
+    },
+    palavra003={
+        nome:"ABACAXI",
+        categoria:"COMIDA"
+    },
+    palavra004={
+        nome:"FEIJOADA",
+        categoria:"COMIDA"
+    },
+    palavra005={
+        nome:"HOLANDA",
+        categoria:"LUGARES"
+    },
+    palavra006={
+        nome:"CAVALO",
+        categoria:"LUGARES"
+    },
+    palavra007={
+        nome:"BORBOLETA",
+        categoria:"ANIMAL"
+    },
+    palavra008={
+        nome:"JAZZ",
+        categoria:"MUSICA"
+    },
+    palavra009={
+        nome:"BEATLES",
+        categoria:"MUSICA"
+    },
+    palavra010={
+        nome:"PAGODE",
+        categoria:"MUSICA"
+    },
+    palavra011={
+        nome:"PIPA",
+        categoria:"OBJETO"
+    },
+    palavra0012={
+        nome:"CANECA",
+        categoria:"OBJETO"
+    },
+    palavra013={
+        nome:"CHINA",
+        categoria:"LUGARES"
+    },
+    palavra014={
+        nome:"JABUTICABA",
+        categoria:"COMIDA"
+    },
+    palavra015={
+        nome:"COELHO",
+        categoria:"ANIMAL"
+    }
+];
+
+function criarPalavra(){
+    const palavra = parseInt(Math.random()* palavras.length);
+    palavraSorteada = palavras[palavra].nome;
+    JS
+    palavraCategoria = palavras[palavra].categoria;
+
+    var categoria = document.getElementById("categoria");
+    categoria.innerHTML = palavraCategoria;
+
+    var tela = document.getElementById("palavra");
+    tela = palavraSorteada;
+    tracos(tela);
+}
+
+function tracos(line){
+    console.log(line);
+    //document.getElementById("palavra").innerHTML = line;
+        var aux = [];
+        aux =line.split("");
+        console.log(aux);
+        var imprime =[];
+
+        for(i=0; i<aux.length;i++){
+            console.log(aux[i]);
+            imprime.push(document.getElementById(`letras${i}`).innerHTML = "__");
+        }
+        console.log("teste "+ imprime);
+        
+        confere(aux);
+    }
+
+    function confere(imprimir){
+        var imprimeTela =[]
+        for(i=0;i<imprimir.length;i++){
+            if(imprimir[i]=="A"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="B"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="C"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="D"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="E"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="F"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="G"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="H"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="I"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="J"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="K"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="L"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="M"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="N"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="O"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="P"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="Q"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="R"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="S"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="T"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="U"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="V"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="X"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="Z"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="W"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="Y"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }else if(imprimir[i]=="Ç"){
+                imprimeTela.push(document.getElementById(`letras${i}`).innerHTML = imprimir[i]);
+            }
+
+        }
+    }
+
+    // for{
+    //     console.log(1);
+    //     if(listaDinamica[i]== undefined){
+    //         listaDinamica[i]="&nbsp;"
+    //         line.innerHTML=line.innerHTML + "<div class='letra'>">+1+"</div>"
+    //     }else{
+    //         line.innerHTML=line.innerHTML + "<div class='letra'>">+1+"</div>"
+    //     }
+    // }
+
+
+
+criarPalavra();
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "forca.css">
+    <script src="forca.js" defer></script>
+    <title>Jogo da forca</title>
+    <img class="alura" src="https://www.alura.com.br/assets/img/alura-share.1647533642.png" height="50" width="50">
+</head>
+<body>
+    <div class ="container">
+        <div class="img"><img src= "https://raw.githubusercontent.com/DntasDaniel/jogoDaForca/master/img/forca.png"></div>
+        <div id="palavra">
+            <div id="letras0"class ="letras"></div>
+            <div id="letras1"class ="letras"></div>
+            <div id="letras2"class ="letras"></div>
+            <div id="letras3"class ="letras"></div>
+            <div id="letras4"class ="letras"></div>
+            <div id="letras5"class ="letras"></div>
+            <div id="letras6"class ="letras"></div>
+            <div id="letras7"class ="letras"></div>
+            <div id="letras8"class ="letras"></div>
+            <div id="letras9"class ="letras"></div>
+            <div id="letras10"class ="letras"></div>
+            <div id="letras11"class ="letras"></div>
+            <div id="letras12"class ="letras"></div>
+        </div>
+        <div id="tentativa"></div>
+        <div id="teclado">
+            <div class="teclas">
+                <button id ="tecla A">A</button>
+                <button id ="tecla b">B</button>
+                <button id ="tecla c">C</button>
+                <button id ="tecla d">D</button>
+                <button id ="tecla e">E</button>
+                <button id ="tecla f">F</button>
+                <button id ="tecla g">G</button>
+                <button id ="tecla h">H</button>
+                <button id ="tecla i">I</button>
+            </div>
+            <div class="teclas">
+                <button id ="tecla j">J</button>
+                <button id ="tecla k">K</button>
+                <button id ="tecla l">L</button>
+                <button id ="tecla m">M</button>
+                <button id ="tecla n">N</button>
+                <button id ="tecla o">O</button>
+                <button id ="tecla p">P</button>
+                <button id ="tecla q">Q</button>
+                <button id ="tecla r">R</button>
+            </div>
+            <div class="teclas">
+                <button id ="tecla s">S</button>
+                <button id ="tecla t">T</button>
+                <button id ="tecla u">U</button>
+                <button id ="tecla v">V</button>
+                <button id ="tecla x">X</button>
+                <button id ="tecla w">W</button>
+                <button id ="tecla y">Y</button>
+                <button id ="tecla z">Z</button>
+                <button id ="tecla ç">Ç</button>
+            </div>
+            <button id="botao">REINICIAR</button>
+        </div>
+        <div id="categoria"></div>
+        <div id="categoria"></div>
+    </div>
+</body>
+</html>
+
+CSS
+
+
+*{
+    background-color: rgb(34, 129, 129);
+    padding: 10;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+.alura{
+    border-radius: 10px;
+    margin: 10,10,10,10;
+}
+
+.img{
+    width: 300px;
+    height: 320px;
+    border-radius: 5px;
+    margin: top;
+
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#palavra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-right: 4px;
+}
+
+.letras{
+    margin-right: 5px;
+}
+
+#teclado{
+    margin-top: 30px;
+    align-items: center;
+}
+
+.teclas button{
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 2px;
+}
+
+button{
+    box-shadow:0px 2px 3px rgb(67, 67, 67) ;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 2px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.teclas button:hover{
+    transform:scale(1.5);
+}
+
+#categoria{
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+@media (min-width:321px){
+    .teclas button{
+        width: 21px;
+        height: 21px;
+    }
+    #categoria{
+        font-size:1.3em;
+    }
+    .letras{
+        width: 22px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:376px){
+    .teclas button{
+        width: 25px;
+        height: 25px;
+    }
+    #categoria{
+        font-size:1.2em;
+    }
+
+    #palavra{
+        font-size: 1.5em;
+    }
+    .letras{
+        width: 18px;
+        margin-right: 12px;
+    }
+
+
+}
+
+@media (min-width:426px){
+    .teclas button{
+        width: 35px;
+        height: 35px;
+    }
+    #categoria{
+        font-size:1.4em;
+    }
+
+    #palavra{
+        font-size: 1.6em;
+    }
+    .letras{
+        width: 22px;
+        margin-right: 15px;
+    }
+
+
+}
+
+@media (min-width:769px){
+    .teclas button{
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+    #categoria{
+        font-size:1.4em;
+    }
+
+    #palavra{
+        font-size: 1.6em;
+    }
+    .letras{
+        width: 28px;
+        margin-right: 8px;
+    }
+
+
+}
