@@ -1,10 +1,13 @@
-## DESAFIO ALURA
-
-Desafio de criptografia!
-
-### Makdown
-
-var i = 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <script> 
+    
+    var i = 0;
 var lista = [];
 function verificacrip(x){
     console.log(x);
@@ -177,7 +180,7 @@ criptInput.addEventListener("keypress",function(e,char){
 function checkChar1(e){
 
     const char = String.fromCharCode(e.keyCode);
-    const pattern ='[a-z0-9 ]';
+    const pattern ='[a-zA-Z0-9 ]';
     if(char.match(pattern)){
         console.log(char);
         lista.push(char);
@@ -187,20 +190,9 @@ function checkChar1(e){
     //----------//----------//
 }
 
-btn2.onclick = verificadescrip, erase;
 
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografia</title>
-    <script src = "aluraDesafio.js" defer>  </script>
+    
+    </script>
 
     <img class="alura" src="https://www.alura.com.br/assets/img/alura-share.1647533642.png" height="110" width="110">
     <br>
@@ -213,7 +205,7 @@ btn2.onclick = verificadescrip, erase;
     <br>
     <p class="alerta">Digite apenas letras minúsculas e sem acento</p>
     <p class="alerta">Ao escrever já criptograva automaticamente!<p>
-        <button  id = "btn" class="btnreflesh" onclick="window.location.reload()" >REFLESH</button>
+        <button  id = "btn" class="btnreflesh" onclick="window.location.reload()" >REFRESH</button>
     <button  id = "btn2" class="bdescrip" >Descriptografar</button>
 
         <style>
@@ -270,4 +262,3 @@ btn2.onclick = verificadescrip, erase;
 
 </body>
 </html>
-}
